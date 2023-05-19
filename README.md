@@ -2,9 +2,90 @@
 
 [PCIC赛道1比赛地址](https://competition.huaweicloud.com/information/1000041792/introduction?track=107)
 
-本团队CVTEDMer取得线上第一名、答辩第二名的成绩，在线上成绩远高于第二名的情况下，被翻盘，不得不吐槽一下大赛举办方的打分机制：评委在考虑选手线上成绩占比60%的情况下，对选手的解决方案打分，最终只根据评委的打分决定排名。
+本团队CVTEDMer取得线上第一名、答辩第二名的成绩，在线上成绩远高于第二名的情况下，被翻盘，不得不吐槽一下大赛举办方的打分机制：评委在考虑选手线上成绩占比60%的情况下，对选手的解决方案打分，最终只根据评委的打分来决定排名。
 
 <div align=center> <img src="https://github.com/cvte-research-datamining/PCIC2022-Track1-Top1/blob/master/figs/%E7%BA%BF%E4%B8%8A%E5%88%86%E6%95%B0%E6%8E%92%E5%90%8D.png" width = 60%/> </div>
+
+
+## 代码目录
+
+```
+├── 01-dataset 数据集1
+│   ├── main.sh 入口
+│   ├── README.md
+│   ├── requirements.txt
+│   └── src
+│       ├── conv
+│       │   ├── conv.py
+│       │   └── run.sh
+│       ├── finetune
+│       │   ├── finetune.py
+│       │   ├── pretrain.py
+│       │   └── run.sh
+│       ├── fusion
+│       │   ├── fusion.py
+│       │   └── run.sh
+│       ├── input
+│       ├── lstm
+│       │   ├── lstm.py
+│       │   └── run.sh
+│       └── process
+│           ├── process.py
+│           └── run.sh
+├── 02-03-dataset 数据集2和3
+│   ├── main.sh 入口
+│   ├── README.md
+│   ├── requirements.txt
+│   └── src
+│       ├── 01-process
+│       │   ├── np2df.py
+│       │   └── run.sh
+│       ├── 02-data
+│       │   ├── finetune
+│       │   │   ├── finetune.py
+│       │   │   └── run.sh
+│       │   └── lstm
+│       │       ├── lstm.py
+│       │       └── run.sh
+│       ├── 03-data
+│       │   ├── 01-feat
+│       │   │   ├── feat.py
+│       │   │   ├── run.sh
+│       │   │   └── sensor_process.py
+│       │   ├── 02-catboost
+│       │   │   ├── graft
+│       │   │   │   ├── cat_graft.py
+│       │   │   │   └── run.sh
+│       │   │   └── kfold
+│       │   │       ├── cat_kfold.py
+│       │   │       └── run.sh
+│       │   └── 03-lightgbm
+│       │       └── 01-lgb-graft
+│       │           ├── lgb_graft.py
+│       │           └── run.sh
+│       └── 04-fusion
+│           ├── fusion.py
+│           └── run.sh
+├── figs
+│   ├── conv.svg
+│   ├── dataset12分数.png
+│   ├── dataset3分数.png
+│   ├── K折交叉验证.svg
+│   ├── lstm.svg
+│   ├── step分布.png
+│   ├── 嫁接学习.svg
+│   ├── 密度分布.png
+│   ├── 故障检测.svg
+│   ├── 标签分布.png
+│   ├── 特征工程.svg
+│   ├── 特征重要性.png
+│   ├── 线上分数排名.png
+│   └── 线下线上分数.png
+├── PCIC2022_Track1_Top1_CVTEDMer.pptx 答辩ppt
+├── README.md
+└── requirements.txt
+```
+
 
 ## 复现
 
