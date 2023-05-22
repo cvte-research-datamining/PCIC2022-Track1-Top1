@@ -2,8 +2,6 @@
 
 [PCIC赛道1比赛地址](https://competition.huaweicloud.com/information/1000041792/introduction?track=107)
 
-本团队CVTEDMer取得线上第一名、答辩第二名的成绩，在线上成绩远高于第二名的情况下，被翻盘，不得不吐槽一下大赛举办方的打分机制：评委在考虑选手线上成绩占比60%的情况下，对选手的解决方案打分，最终只根据评委的打分来决定排名。
-
 <div align=center> <img src="https://github.com/cvte-research-datamining/PCIC2022-Track1-Top1/blob/master/figs/%E7%BA%BF%E4%B8%8A%E5%88%86%E6%95%B0%E6%8E%92%E5%90%8D.png" width = 60%/> </div>
 
 
